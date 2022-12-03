@@ -1,0 +1,64 @@
+/** fonts
+------------------------------------------------------------------ */
+
+/* Oranienbaum */
+@font-face {
+	font-family: "Oranienbaum";
+	src:
+		url("../fonts/oranienbaum-regular.woff2") format("woff2"),
+		url("../fonts/oranienbaum-regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Roboto */
+@font-face {
+	font-family: "Roboto";
+	src:
+		url("../fonts/roboto-light.woff") format("woff2"),
+		url("../fonts/roboto-light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Roboto";
+	src:
+		url("../fonts/roboto-regular.woff") format("woff2"),
+		url("../fonts/roboto-regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Roboto";
+	src:
+		url("../fonts/roboto-bold.woff") format("woff2"),
+		url("../fonts/roboto-bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+/*
+
+font-weight:
+
+100 - Thin
+200 - Extra Light
+300 - Light
+400 - Normal / Regular
+500 - Medium
+600 - Semi Bold / Demi Bold
+700 - Bold
+800 - Extra Bold / Ultra Bold
+900 - Black / Heavy
+
+*/
+
+
+/** / fonts
+------------------------------------------------------------------ */

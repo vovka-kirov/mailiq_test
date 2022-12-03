@@ -1,0 +1,19 @@
+{
+  "name": "infinity_test",
+  "author": "cssfish",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-footer": "^2.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg2string": "^0.3.1",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.4"
+  }
+}

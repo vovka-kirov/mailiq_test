@@ -1,0 +1,21 @@
+// menu
+.menu {
+	font-family: $hdr-ff;
+	font-size: 18px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	li {
+		display: inline;
+		margin-right: 20px;
+		&:last-child { margin-right: 0; }
+	}
+
+	// sm
+	@media only screen and (max-width: $bp-sm) {
+		text-align: center;
+		li {
+			margin: 0 7px;
+		}
+	}
+
+}

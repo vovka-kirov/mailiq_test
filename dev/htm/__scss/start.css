@@ -1,0 +1,151 @@
+/** start - reset & normalize
+------------------------------------------------------------------ */
+
+
+/*
+1. Always show scrollbar
+2. Prevent adjustments of font size after orientation changes in iOS & another
+*/
+html {
+	overflow-y: scroll; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	text-size-adjust: 100%; /* 2 */
+	}
+
+/* reset margin for <body> */
+body { margin: 0; }
+
+/* block behavior for html5 tags in old browsers */
+article, aside,
+details, dialog,
+figcaption, figure, footer,
+header, hgroup,
+main, menu, nav,
+section, summary {
+	display: block;
+	}
+
+/* ie fix */
+[hidden] { display: none; }
+a { background-color: transparent; }
+
+/* remove outline when mouse ON element */
+a:active,
+a:hover {
+	outline-width: 0;
+	}
+
+/*
+fix weight if base (body) font-weight is not "normal" (400), because default weight for "b" & "strong" is "bolder"
+*/
+b,
+strong {
+	font-weight: bold;
+	}
+
+
+img {
+	max-width: 100%;
+	border: none;
+	vertical-align: top;
+	}
+
+figure { margin: 0 auto; }
+
+svg { display: block; }
+
+nav ol,
+nav ul,
+nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+sup,
+sub {
+	position: relative;
+	top: -0.6em;
+	font-size: 68.75%;
+	line-height: 1;
+	vertical-align: baseline;
+	}
+sub {
+	top: 0.3em;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+
+
+
+/*
+	forms
+*/
+
+/* inherit base values */
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	}
+
+/* ie / edge fix */
+button,
+input {
+	overflow: visible;
+	}
+
+/* ie10+ fix */
+input::-ms-clear {
+	display: none;
+	}
+
+button { cursor: pointer; }
+:disabled {	cursor: not-allowed; }
+
+/* webkit fix */
+input[type="search"],
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	}
+
+/* ff fix */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+	}
+
+/* remove outline when hover */
+input:hover,
+button:hover,
+select:hover,
+textarea:hover,
+input:hover:focus,
+button:hover:focus,
+select:hover:focus,
+textarea:hover:focus {
+	outline-width: 0;
+	}
+
+textarea {
+	overflow: auto; /* ie fix */
+	resize: vertical;
+	}
+
+
+/** / start
+------------------------------------------------------------------ */

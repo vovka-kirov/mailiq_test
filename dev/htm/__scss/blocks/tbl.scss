@@ -1,0 +1,17 @@
+// tbl - table
+.tbl {
+	border: 1px solid $clr-gray;
+	font-weight: normal;
+	th, td {
+		padding: 10px;
+		border: 1px solid $clr-gray;
+	}
+	th {
+		font-size: 18px;
+		background-color: #d8f0d8;
+		text-transform: uppercase;
+	}
+	td {
+		line-height: 1.4;
+	}
+}

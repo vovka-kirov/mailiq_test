@@ -1,0 +1,26 @@
+// button mods
+.btn {
+	// currency
+	&--c {
+		padding: calc(1em * 10 / 16);
+		min-width: 2em;
+	}
+
+	// middle (size)
+	&--md {
+		padding: calc(1em * 17 / 14) 1em;
+		font-size: calc(1rem * 14 / 16);
+	}
+
+	// to top
+	&--to_top {
+		padding: 1em calc(1em * 15 / 12);
+		font-size: calc(1rem * 12 / 16);
+		border-radius: 0;
+		.top {
+			position: relative;
+			top: 1px; //pp
+			margin: 0 4px;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+// symbols
+.minus {
+	display: inline-block;
+	width: 1em;
+	height: calc(1em / 3 );
+	background-color: currentColor;
+}
+.check {
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: calc(1em * 5 / 18);
+	background-color: currentColor;
+	transform: rotate(-45deg);
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 100%;
+		margin-bottom: -1px; //pp
+		width: calc(1em * 5 / 18);
+		height: calc(1em * 5 / 18);
+		background-color: currentColor;
+	}
+}
+.top {
+	display: inline-block;
+	box-sizing: content-box;
+	width: 0.4em;
+	height: 0.4em;
+	border: 3px solid;
+	border-right: none;
+	border-bottom: none;
+	transform: rotate(45deg);
+}

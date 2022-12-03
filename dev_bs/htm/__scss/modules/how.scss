@@ -1,0 +1,48 @@
+// how
+.how {
+	margin-top: 40px;
+	&__inner {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__h { margin-bottom: 1em; }
+	&__cont {
+		font-size: calc(1rem * 18 /16);
+		line-height: 1.45;
+		p {
+			$m : calc(1em * 30 / 18);
+			margin-top: $m;
+			margin-bottom: $m;
+		}
+	}
+	&__currency > * {
+		vertical-align: top; // ie fix
+	}
+	&__tbl {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		overflow-y: auto;
+		th, td {
+			text-align: center;
+			vertical-align: top;
+		}
+		th:first-child,
+		td:first-child {
+			text-align: left;
+		}
+		em {
+			display: block;
+			font-style: normal;
+			font-size: calc(1rem * 14 /16);
+		}
+	}
+
+	// md
+	@include media-breakpoint-down(md) {
+		&__cont p {
+			margin: 1em 0;
+			width: auto;
+		}
+	}
+}

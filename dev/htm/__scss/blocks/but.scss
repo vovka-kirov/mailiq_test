@@ -1,0 +1,76 @@
+// but - button
+.but {
+	// centering for <a>
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	box-sizing: border-box;
+	position: relative;
+	border: 1px solid $clr-red;
+	padding: 1em;
+	color: $clr-inv;
+	background-color: $clr-red;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: uppercase;
+	text-align: center; //fb
+	text-decoration: none; // if <a>
+	border-radius: 3px;
+	transition: all 0.3s ease;
+	user-select: none;
+
+	// states
+	&:hover,
+	&:focus {
+		color: $clr-red;
+		background-color: $clr-inv;
+		outline: none;
+	}
+
+	//
+	// mods
+
+	// currency
+	&--c {
+		padding: calc(1em * 10 / 16);
+		min-width: 2em;
+		border-color: $clr-txt;
+		color: $clr-txt;
+		background-color: transparent;
+		font-size: $txt-fz;
+		&:hover,
+		&:focus {
+			color: $clr-inv;
+			background-color: $clr-txt;
+		}
+	}
+
+	// middle (size)
+	&--md {
+		padding: calc(1em  *17 / 14) 1em;
+		font-size: 14px;
+	}
+
+	// to top
+	&--to_top {
+		padding: 1em calc(1em * 15 / 12);
+		color: $clr-inv;
+		border-color: $clr-inv;
+		background: transparent;
+		font-size: 12px;
+		border-radius: 0;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $clr-txt;
+		}
+		.top {
+			position: relative;
+			top: 1px; //pp
+			margin: 0 4px;
+		}
+	}
+
+}

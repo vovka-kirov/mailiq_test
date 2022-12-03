@@ -1,0 +1,59 @@
+// how
+.how {
+	&__in {
+		width: 90%;
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__inner {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&__h {
+		margin-bottom: 1em;
+	}
+	&__cont {
+		font-size: 18px;
+		line-height: 1.45;
+		p {
+			$m : calc(1em * 30 / 18);
+			margin-top: $m;
+			margin-bottom: $m;
+		}
+	}
+	&__currency > * {
+		vertical-align: top; // ie fix
+	}
+	&__tbl {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		overflow-y: auto;
+		th, td {
+			text-align: center;
+			vertical-align: top;
+		}
+		th:first-child,
+		td:first-child {
+			text-align: left;
+		}
+		em {
+			display: block;
+			font-style: normal;
+			font-size: 14px;
+		}
+	}
+
+	// md
+	@media only screen and (max-width: $bp-md) {
+		&__cont p {
+			margin: 1em 0;
+		}
+	}
+
+	// sm
+	@media only screen and (max-width: $bp-sm) {
+		&__inner { width: auto; }
+	}
+}

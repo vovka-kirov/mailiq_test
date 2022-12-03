@@ -1,0 +1,12 @@
+// logo
+.logo {
+	display: block;
+	overflow: hidden;
+	width: 212px;
+	height: 147px;
+	background: url(../i/logo.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: left;
+	text-indent: -9999px;
+	i { position: absolute; }
+}

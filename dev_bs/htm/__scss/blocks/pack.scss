@@ -1,0 +1,91 @@
+// pack - package
+.pack {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px 35px;
+	border: 3px solid $gray-300;
+	transition:
+		border 0.2s ease,
+		box-shadow 0.2s ease;
+	&__h {
+		margin: 0;
+		margin-bottom: calc(1em * 12 / 28);
+		font-family: $font-family-base;
+		font-size: calc(1rem * 28 / 16);
+		line-height: 1.4;
+		font-weight: bold;
+		text-transform: none;
+		text-align: center;
+		span {
+			display: block;
+			font-size: calc(1rem * 18 / 16);
+			font-weight: normal;
+		}
+	}
+	&__info {
+		margin-top: calc(1em * 10 / 18);
+		margin-bottom: 0;
+		font-size: calc(1rem * 18 / 16);
+		line-height: 1.4;
+		dt {
+			font-weight: $font-weight-base;
+		}
+		dt:after { content: ":"; }
+		dd { font-weight: normal; }
+	}
+	&__in {
+		margin-top: auto;
+	}
+	&__price_off {
+		position: relative;
+		margin-top: 1em;
+		font-size: calc(1rem * 20 / 16);
+		line-height: 1;
+		text-align: center;
+		span {
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: -10px;
+				right: -10px;
+				height: 2px;
+				background-color: $red;
+				transform: rotate(-10deg);
+			}
+		}
+	}
+	&__price {
+		margin-top: calc(1em * 12 / 25);
+		font-weight: bold;
+		font-size: calc(1rem * 25 / 16);
+		line-height: 1;
+		text-align: center;
+	}
+	&__but {
+		margin-top: 27px; //pp
+	}
+
+	//
+	// hover
+	&:hover {
+		border-color: $gray-500;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	}
+
+
+	// md
+	@include media-breakpoint-down(md) {
+		padding: 20px;
+		text-align: center;
+		&__h { margin-bottom: 0; }
+		&__price,
+		&__price_off {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		&__in { margin-top: 10px; }
+		&__but { margin-top: 15px; }
+	}
+}

@@ -1,0 +1,51 @@
+// hero
+.hero {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	height: 821px;
+	padding-bottom: 161px;
+	margin-bottom: -161px;
+	background: url(../i/hero.jpg) 50% 100% no-repeat;
+	background-size: auto 100%;
+
+	&__logo {}
+	&__mission {
+		margin-top: 46px;
+		margin-bottom: 0;
+		color: $white;
+		font-family: $font-family-h;
+		line-height: 1;
+		text-transform: uppercase;
+		dt {
+			margin-bottom: 0.4em;
+			font-size: calc(1rem * 20 / 16);
+			font-weight: normal;
+			letter-spacing: 0.02em;
+		}
+		dd {
+			margin-bottom: 0;
+			color: $orange;
+		}
+	}
+
+	// lg
+	@include media-breakpoint-down(lg) {
+		height: 750px;
+	}
+
+	// md
+	@include media-breakpoint-down(md) {
+		height: 700px;
+		margin-bottom: -200px;
+		padding-bottom: 140px;
+	}
+	// sm
+	@include media-breakpoint-down(sm) {
+		height: 650px;
+		padding-bottom: 120px;
+		&__mission {
+			max-width: 50%;
+		}
+	}
+}

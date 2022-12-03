@@ -1,0 +1,41 @@
+// new
+.new {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+
+	&__lbl {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__h {
+		margin-top: calc(1em * 62 / 40);
+		margin-bottom: calc(1em * 42 / 40);
+	}
+	&__descr {
+		width: 90%;
+		margin: calc(1em * 10 / 18) auto;
+		max-width: 900px;
+		font-size: 18px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	&__i {
+		font-size: 14px;
+		img {
+			display: block;
+			width: 100%;
+			margin-bottom: 3px; //pp
+		}
+	}
+
+	// md
+	@media only screen and (max-width: $bp-md) {
+		&__h { margin-bottom: 1em; }
+		&__descr {
+			margin: 1em auto;
+			line-height: 1.4;
+		}
+	}
+}

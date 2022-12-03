@@ -1,0 +1,6 @@
+/* full width item (input etc) */
+.fw {
+	box-sizing: border-box;
+	width: 100%;
+}
+/* / full width */

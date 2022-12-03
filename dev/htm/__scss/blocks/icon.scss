@@ -1,0 +1,26 @@
+/* icon */
+.icon {
+	position: relative;
+	display: inline-block;
+	vertical-align: baseline;
+	width: 1em;
+	height: 1em;
+	font-size: 25px;
+	background-repeat: no-repeat;
+	background-size: auto 300%;
+
+	&:hover {
+		background-position: 0 -1em;
+	}
+	// &:focus,
+	// &:active {
+		// background-position: 0 -2em;
+	// }
+
+
+	// mods
+	&--soc_inst { background-image: url(../i/icon--inst.png); }
+	&--soc_fb { background-image: url(../i/icon--fb.png); }
+	&--soc_vk { background-image: url(../i/icon--vk.png); }
+}
+/* / icon */

@@ -1,0 +1,88 @@
+// head
+.head {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	color: $white;
+
+	&__in {
+		display: flex;
+		align-items: center;
+	}
+	&__side {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		padding-left: 20px;
+	}
+	&__soc {
+		position: relative;
+		top: 4px; //pp
+	}
+	&__contacts {
+		margin-left: 80px;
+		margin-bottom: 0;
+		font-family: $font-family-h;
+		font-size: calc(1rem * 14 / 16);
+		line-height: 1.5;
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	// lg
+	@include media-breakpoint-down(lg) {
+		&__contacts {
+			margin-left: 40px;
+		}
+	}
+
+	// md
+	@include media-breakpoint-down(md) {
+		top: 20px;
+	}
+
+	// sm
+	@include media-breakpoint-down(sm) {
+		&__in {
+			flex-wrap: wrap;
+			& > * {	width: 100%; }
+		}
+		&__side {
+			padding-left: 0;
+			margin-top: 10px;
+		}
+		&__contacts {
+			margin-left: auto;
+		}
+	}
+
+
+
+	//
+	// mod - sticky
+	&--sticky {
+		z-index: 5;
+		opacity: 0;
+		visibility: hidden;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		padding: 5px 0;
+		background-color: $body-bg;
+		transform: translateY(-100%);
+		transition: all 0.3s ease;
+		//
+		// state - active
+		&.is-active {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+	// sm
+	@include media-breakpoint-down(sm) {
+		&--sticky &__side { display: none; }
+	}
+}

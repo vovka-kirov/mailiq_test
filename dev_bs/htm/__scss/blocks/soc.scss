@@ -1,0 +1,10 @@
+// soc - social links
+.soc {
+	display: flex;
+	margin-bottom: 0;
+	&__item {
+		flex-shrink: 0;
+		margin-right: 5px;
+		&:last-child { margin-right: 0; }
+	}
+}

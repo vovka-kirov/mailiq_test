@@ -1,0 +1,18 @@
+// lbl - label
+.lbl {
+	width: 300px;
+	color: $white;
+	background-color: $red;
+	font-weight: normal;
+	font-size:  calc(1rem * 18 / 16);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+	transform-origin: 100% 100%;
+	transform: translate(-95px, -50px) rotate(-40deg);
+
+
+	// sm
+	@include media-breakpoint-down(sm) {
+		font-size: calc(1rem * 14 / 16);
+		transform: translate(-140px, -80px) rotate(-40deg);
+	}
+}

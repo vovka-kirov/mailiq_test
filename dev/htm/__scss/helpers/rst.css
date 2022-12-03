@@ -1,0 +1,27 @@
+/* rst - list ReSeT like NAV
+ *
+ * .rsto - reset ONE list - THIS (specificity of li = 0,0,1,0)
+ * .rst  - reset all INNER lists (specificity of li = 0,0,1,1)
+ *
+ */
+
+.rsto,
+.rsto > * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+	
+.rst,
+.rst ol,
+.rst ul,
+.rst li,
+.rst dl,
+.rst dt,
+.rst dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+/* / rst */

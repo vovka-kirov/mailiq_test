@@ -1,0 +1,83 @@
+//
+// project base
+//
+
+
+//
+// viewport / html / body
+html,
+body {
+	color: $clr-txt;
+	background: $clr-txt;
+}
+body {
+	overflow-x: hidden;
+	font-size: 100%; // 16
+	line-height: 1.75;
+	font-weight: 300;
+	font-family: $txt-ff;
+}
+
+
+//
+// links
+a {
+	color: $clr-lnk;
+	text-decoration: none;
+	// text-decoration-skip-ink: none;
+	transition: color 0.2s ease;
+	&:hover { color: $clr-lnk-hv; }
+}
+// inherit mod
+.a_i {
+	color: inherit;
+	&:hover { color: $clr-lnk-hv; }
+}
+// inherit + underline mod
+.a_iu {
+	color: inherit;
+	text-decoration: underline;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+
+//
+// headers
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin: 1em 0 0.5em;
+	font-family: $hdr-ff;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+h1, .h1 {
+	font-size: 40px;
+	line-height: 1;
+}
+h2, .h2 {
+	font-size: 36px;
+}
+h3, .h3 {
+	font-size: 28px;
+}
+// sm
+@media only screen and (max-width: $bp-sm) {
+	h1, .h1 {
+		font-size: 36px;
+	}
+	h2, .h2 {
+		font-size: 28px;
+	}
+	h3, .h3 {
+		font-size: 20px;
+	}
+}
+
+p { margin: 1em 0; }

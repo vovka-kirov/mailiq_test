@@ -1,0 +1,22 @@
+// foot
+.foot {
+	color: $white;
+	padding-bottom: 30px;
+
+	&__top {
+		padding-top: 30px;
+		padding-bottom: 40px;
+		text-align: center;
+	}
+	&__in {
+		font-size: 12px;
+		line-height: 1.8;
+		p { margin: 0;}
+	}
+	&__menu { margin: 0; }
+
+	// sm
+	@include media-breakpoint-down(sm) {
+		&__in { text-align: center; }
+	}
+}

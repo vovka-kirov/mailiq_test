@@ -1,0 +1,19 @@
+// menu
+.menu {
+	font-family: $font-family-h;
+	font-size: calc(1rem * 18 / 16);
+	line-height: 1.2;
+	text-transform: uppercase;
+	ul { margin-bottom: 0; }
+	li {
+		display: inline;
+		margin-right: 20px;
+		&:last-child { margin-right: 0; }
+	}
+
+	// sm
+	@include media-breakpoint-down(sm) {
+		text-align: center;
+		li { margin: 0 7px;	}
+	}
+}

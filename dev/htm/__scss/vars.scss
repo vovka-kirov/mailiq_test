@@ -1,0 +1,67 @@
+//
+// colors
+//
+
+//
+// groups of colors (7-lvl)
+//
+// $clr-xxx-darkest:   #hhhhhh;
+// $clr-xxx-darken:    #hhhhhh;
+// $clr-xxx-dark:      #hhhhhh;
+// $clr-xxx:           #hhhhhh;
+// $clr-xxx-light:     #hhhhhh;
+// $clr-xxx-lighten:   #hhhhhh;
+// $clr-xxx-lightest:  #hhhhhh;
+
+$clr-gray-dark: #bcbcbc;
+$clr-gray: #dedede;
+
+$clr-red:  #fe0b37;
+$clr-orange:  #cdb380;
+
+$clr-blue: #266494;
+$clr-blue-light: #6fc4d4;
+
+
+//
+// logic colors
+
+$clr-txt: #000;
+$clr-inv: #fff;
+$clr-lnk:    $clr-blue;
+$clr-lnk-hv: $clr-blue-light;
+
+
+//---------------------------------------------//
+
+
+//
+// typography
+//
+
+$ff-rb : Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$ff-or: Oranienbaum, Times, "Times New Roman", serif;
+
+$txt-fz  : 16px;
+$txt-ff  : $ff-rb;
+$hdr-ff  : $ff-or;
+
+
+
+//---------------------------------------------//
+
+
+//
+// ranges / breakpoints
+//
+
+$point-sm:  768px;
+$point-md:  1024px;
+$point-lg:  1280px;
+
+// to max-w
+$bp-sm:  $point-sm - 0.02;
+$bp-md:  $point-md - 0.02;
+$bp-lg:  $point-lg - 0.02;
+
+//---------------------------------------------//

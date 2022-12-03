@@ -1,0 +1,44 @@
+// process
+.process {
+	padding-bottom: 70px;
+	&__h {
+		margin-bottom: calc(1em * 62 / 40);
+	}
+	&__lst {
+		& > * {
+			margin-bottom: 40px;
+			&:last-child { margin-bottom: 0; }
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+	&__i {
+		flex-shrink: 0;
+		width: 190px;
+		margin-right: 37px; //pp
+		img { display: block; }
+	}
+	&__txt {
+		-ms-flex-negative: 1; // ie fix
+		font-size: calc(1rem * 26 / 16);
+		line-height: 1;
+	}
+
+	// md
+	@include media-breakpoint-down(md) {
+		&__h { margin-bottom: 1em; }
+		&__txt { font-size: calc(1rem * 20 / 16); }
+	}
+
+	// sm
+	@include media-breakpoint-down(sm) {
+		&__h { margin-bottom: 1em; }
+		&__i {
+			width: 25%;
+			margin-right: 20px;
+		}
+		&__txt { font-size: 1rem; }
+	}
+}
